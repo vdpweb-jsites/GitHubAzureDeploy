@@ -1,16 +1,19 @@
-﻿@{
-    ViewBag.Title = "Home Page - Production";
+﻿@using System.Configuration
+
+@{
+    ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
     <h1>@ViewBag.Title</h1>
+    <h2>AppName: @ConfigurationManager.AppSettings["AppName"]</h2>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Getting Started</h2>
         <p>
             ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
             enables a clean separation of concerns and gives you full control over markup
